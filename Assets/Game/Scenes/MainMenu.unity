@@ -15,9 +15,9 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.11764706, g: 0.123814575, b: 0.25490198, a: 1}
-  m_FogMode: 1
-  m_FogDensity: 0.12
+  m_FogColor: {r: 0.09803922, g: 0.05882353, b: 0.05882353, a: 1}
+  m_FogMode: 2
+  m_FogDensity: 0.07
   m_LinearFogStart: 0
   m_LinearFogEnd: 45
   m_AmbientSkyColor: {r: 0.34042364, g: 0.5238968, b: 0.8490566, a: 1}
@@ -751,7 +751,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dungeon fall
+  m_text: 'NetherFall
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d99559b760bd74a418db01ca7f8b8e91, type: 2}
   m_sharedMaterial: {fileID: -7096121679388077993, guid: d99559b760bd74a418db01ca7f8b8e91,
@@ -2022,7 +2024,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Music by YouFulca - Wingless Seraph
+  m_text: Music by Ngo Trung Hieu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4139,7 +4141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1275691876
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4179,7 +4181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A game by Davi Braga '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6337ea0ba31c76d479db7dded5bab369, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 6337ea0ba31c76d479db7dded5bab369, type: 2}
@@ -4561,7 +4563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1354016595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6480,7 +6482,7 @@ PrefabInstance:
     - target: {fileID: 1063109620871003664, guid: 7e9e7ee91ad184c4e8bbf4f0a705ed7f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1063109620871003664, guid: 7e9e7ee91ad184c4e8bbf4f0a705ed7f,
         type: 3}
@@ -6490,7 +6492,7 @@ PrefabInstance:
     - target: {fileID: 1063109620871003664, guid: 7e9e7ee91ad184c4e8bbf4f0a705ed7f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1063109620871003664, guid: 7e9e7ee91ad184c4e8bbf4f0a705ed7f,
         type: 3}
@@ -6540,12 +6542,12 @@ PrefabInstance:
     - target: {fileID: 1063109620871003664, guid: 7e9e7ee91ad184c4e8bbf4f0a705ed7f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 307.0547
       objectReference: {fileID: 0}
     - target: {fileID: 1063109620871003664, guid: 7e9e7ee91ad184c4e8bbf4f0a705ed7f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -73.89815
       objectReference: {fileID: 0}
     - target: {fileID: 1063109620871003664, guid: 7e9e7ee91ad184c4e8bbf4f0a705ed7f,
         type: 3}
@@ -9382,7 +9384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &8038012768064579008
 PrefabInstance:
   m_ObjectHideFlags: 0

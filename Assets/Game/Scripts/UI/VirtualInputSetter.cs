@@ -22,17 +22,17 @@ public class VirtualInputSetter : MonoBehaviour
             TurnVirtualInput(false);
             gameObject.SetActive(false);
         }
-        if(Gamepad.all.Count>0)
-        {
-            TurnVirtualInput(false);
-            gameObject.SetActive(false);
-            return;
-        }
-
         if(Application.isMobilePlatform)
         {
             gameObject.SetActive(false);
             TurnVirtualInput(true);
+            return;
+        }
+
+        if(Gamepad.all.Count>0)
+        {
+            TurnVirtualInput(false);
+            gameObject.SetActive(false);
             return;
         }
       

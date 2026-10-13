@@ -114,8 +114,17 @@ public class GameManager : MonoBehaviour
     public void UnPauseGame()
     { 
         ChangeGameState(GameState.playing);
+        if(Application.isMobilePlatform)
+        {
+            PlayerPrefs.SetInt("usingVirtualInput",1);
+            PlayerPrefs.Save();
+        }
         onGAmeGoesPlayMode?.Invoke();
-        if(Application.isMobilePlatform||Application.platform==RuntimePlatform.WebGLPlayer)
+        if(Application.isMobilePlatform)
+        {
+            virtualInput.SetActive(true);
+        }
+        else if(Application.platform==RuntimePlatform.WebGLPlayer)
         {
              if(PlayerPrefs.GetInt("usingVirtualInput")>0)
             virtualInput.SetActive(true);

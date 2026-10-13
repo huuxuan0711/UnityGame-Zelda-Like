@@ -8,7 +8,7 @@ public class VirtualInputPotion : MonoBehaviour
    UIVirtualButton potionButton;
     private void Awake() {
         potionButton = GetComponent<UIVirtualButton>();
-        potionButton.interactable = PlayerPrefs.GetInt("usingVirtualInput")>0&&(Application.isMobilePlatform||Application.platform==RuntimePlatform.WebGLPlayer);
+        potionButton.interactable = true;
         
     }
     public void EnableDisableButtonInteraction(bool on)

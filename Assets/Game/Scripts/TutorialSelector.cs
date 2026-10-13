@@ -22,12 +22,17 @@ public class TutorialSelector : MonoBehaviour
 
     public void FireTutorial()
     {
+        if(Application.isMobilePlatform)
+        {
+            if(PlayerPrefs.GetInt("usingVirtualInput")>0) virtualController.SetActive(true);
+            return;
+        }
         if(Gamepad.all.Count>0) gamepadTutorial.gameObject.SetActive(true);
         else if(Application.platform==RuntimePlatform.WebGLPlayer)
         {
             if(PlayerPrefs.GetInt("usingVirtualInput")>0) virtualController.SetActive(true);
         }      
-        else if(!Application.isMobilePlatform) keyboardTutorial.gameObject.SetActive(true);
+        else keyboardTutorial.gameObject.SetActive(true);
         
     }
 }

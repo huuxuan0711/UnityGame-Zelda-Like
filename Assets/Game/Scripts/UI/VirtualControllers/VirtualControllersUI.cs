@@ -11,8 +11,15 @@ public class VirtualControllersUI : MonoBehaviour
     [SerializeField]InteractionSystem interactionSystem;
 
     private void OnEnable() {
-        interactionSystem.onANewInteractingObject+=ToggleOnInteractingButton;
-        interactionSystem.onClearInteractingObject+=ToggleOffInteractingButton;
+        if(player==null)
+        {
+            player = FindObjectOfType<PlayerController>();
+        }
+        if(interactionSystem!=null)
+        {
+            interactionSystem.onANewInteractingObject+=ToggleOnInteractingButton;
+            interactionSystem.onClearInteractingObject+=ToggleOffInteractingButton;
+        }
 
     }
 
